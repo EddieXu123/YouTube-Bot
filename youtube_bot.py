@@ -8,10 +8,11 @@ from contact import email, password
 
 class YouTubeBot:
     def __init__(self):
+        # Create a browser we can play on
         self.driver = webdriver.Chrome()
 
     def log_on_and_like(self):
-        # Log into your Gmail account first
+        """First, we must log into our Gmail account"""
         # Go to Gmail
         self.driver.get(
             'https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
@@ -28,19 +29,22 @@ class YouTubeBot:
         sleep(4)
 
         # Log onto Video
-        self.driver.get('https://www.youtube.com/user/tseries/videos')
+        """CHANGE THIS URL TO THE VIDEOS PAGE OF YOUR DESIRED CHANNEL"""
+        self.driver.get('https://www.youtube.com/user/tseries/videos')  #Replace tseries with name of your channel
 
-        # I must first open inspect element panel in order to 'like' the vid because youtube hid the xpath
+        """I must first open the 'inspect element' panel in order to 'like' the vid because YouTube hid the name of the xpath"""
         sleep(5)
         keyboard = Controller()
+        # Lines 39+40 act as a right click
         keyboard.press(Key.ctrl_l)
         pyautogui.click(500, 200)
+        # After right clicking, the inspect element option is 7 options down
         i = 0
         while i < 6:
             keyboard.press(Key.down)
             keyboard.release(Key.down)
             i += 1
-        keyboard.press(Key.enter)
+        keyboard.press(Key.enter)  #Open up insect element tab in order to like the video
         sleep(3)
 
         # Goes to playlist of all the videos
@@ -51,15 +55,20 @@ class YouTubeBot:
         self.driver.find_element_by_xpath(
             '/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[4]/div[1]/div/div[7]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-toggle-button-renderer[1]/a/yt-icon-button/button/yt-icon').click()
 
+        # Put all of the videos in the playlist into an array
         videos = self.driver.find_elements_by_id('playlist-items')
+        # For every video in your array (playlist)
         for i in range(1, len(videos)):
+            # Select the video
             current = videos[i]
             current.click()
             sleep(3)
+            # Like the video
             self.driver.find_element_by_xpath(
                 '/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[4]/div[1]/div/div[7]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-toggle-button-renderer[1]/a/yt-icon-button/button/yt-icon').click()
 
 
-#bot = YouTubeBot()
-#bot.log_on_and_like()
+# Calling the functions to run the program
+bot = YouTubeBot()
+bot.log_on_and_like()
 
