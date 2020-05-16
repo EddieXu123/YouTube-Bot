@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52129423-1721-4c05-9eae-baaa81daeff8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/YouTube-Bot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/eddiexu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screen_shot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/youtube_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/youtube_bot.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

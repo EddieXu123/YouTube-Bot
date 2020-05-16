@@ -60,6 +60,6 @@ class YouTubeBot:
                 '/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[4]/div[1]/div/div[7]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-toggle-button-renderer[1]/a/yt-icon-button/button/yt-icon').click()
 
 
-bot = YouTubeBot()
-bot.log_on_and_like()
+#bot = YouTubeBot()
+#bot.log_on_and_like()
 
