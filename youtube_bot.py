@@ -8,7 +8,7 @@ from contact import email, password
 
 class YouTubeBot:
     def __init__(self):
-        # Create a browser we can play on
+        # Create the browser we will use
         self.driver = webdriver.Chrome()
 
     def log_on_and_like(self):
