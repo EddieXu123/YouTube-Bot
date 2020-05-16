@@ -1,4 +1,7 @@
 # YouTube Bot
+Second of the 10 Bots in 10 Days project
+\
+\
 YouTube Bot that likes every video on a channel (And I guess unlikes every liked video? xD). WORKS FOR EVERY CHANNEL! Just change the URL to the video page of your channel!
 \
 \
