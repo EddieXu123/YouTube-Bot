@@ -10,7 +10,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
 from pynput.keyboard import Key, Controller
 import pyautogui
-from contact import email, password, phone_num
+from contact import email, password
 
 
 def screen_shot():
