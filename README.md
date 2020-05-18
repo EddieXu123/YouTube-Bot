@@ -2,7 +2,7 @@
 Second of the 10 Bots in 10 Days project
 \
 \
-YouTube Bot that likes every video on a channel (And I guess unlikes every liked video? xD). WORKS FOR EVERY CHANNEL! Just change the URL to the video page of your channel!
+YouTube Bot that likes every video on a channel (And I guess unlikes every liked video? :O). WORKS FOR EVERY CHANNEL! Just change the URL to the video page of your channel!
 \
 \
 At first, I wanted to create a bot that would spam "like" a video. However, after creating around 5 accounts using the same phone number, I ran into the issue of "This phone number has been used too many times", meaning I could no longer create anymore gmail accounts (forever D:) with this phone number. 
